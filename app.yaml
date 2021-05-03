@@ -1,0 +1,8 @@
+env: flex
+runtime: custom
+instance_class: F4_1G
+readiness_check:
+  app_start_timeout_sec: 12000
+entrypoint: streamlit run notifier.py --server.address=0.0.0.0 --server.port=$PORT
+
+# --browser.serverAddress=https://vaccinesearchindia.ue.r.appspot.com --browser.port=$PORT
